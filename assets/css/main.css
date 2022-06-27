@@ -1404,8 +1404,8 @@ h6 {
 .stricky-header .main-menu__list {
     margin-left: auto;
     border-right: 1px solid #e6eaef;
-    padding-right: 0;
-    margin-right: 30px;
+    padding-right: 15px;
+    margin-right: 40px;
 }
 
 
@@ -1604,7 +1604,7 @@ h6 {
 
 .main-header__info-phone>i {
     font-size: 32px;
-    color: var(--thm-base);
+    color: var(--thm-primary);
 }
 
 .main-header__info-phone-content {
@@ -2291,6 +2291,17 @@ h6 {
     transform: scale(1);
     background-position: center;
     transition: transform 7000ms ease;
+}
+
+.main-slider .swiper-slide .image-layer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0c2139b0;
+    z-index: 999;
 }
 
 .main-slider .swiper-slide .container {
@@ -3194,7 +3205,6 @@ h6 {
 .site-footer {
     position: relative;
     background-color: #0c2139;
-    background-image: url(../images/backgrounds/footer-bg-1-1.jpg);
     background-position: top left;
     background-size: cover;
     z-index: 0;
@@ -4568,8 +4578,8 @@ h6 {
 
 .feature-one {
     background-color: #eff2f6;
-    padding-bottom: 120px;
-    padding-top: 345px;
+    padding-bottom: 100px;
+    padding-top: 100px;
     position: relative;
 }
 
@@ -4651,7 +4661,7 @@ h6 {
     position: relative;
     align-items: center;
     display: flex;
-    padding: 50px;
+    padding: 30px;
     border-radius: 4px;
     transition: all 500ms ease;
     margin-bottom: 30px;
@@ -4682,7 +4692,7 @@ h6 {
 .feature-one__box i {
     position: relative;
     font-size: 60px;
-    color: var(--thm-base);
+    color: var(--thm-primary);
     margin-right: 20px;
 }
 
@@ -4705,9 +4715,9 @@ h6 {
 
 .feature-one__box p {
     position: relative;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--thm-black);
     margin: 0;
 }
@@ -5248,7 +5258,7 @@ h6 {
 
 .service-second {
     background-color: #fff;
-    padding: 30px 35px 30px 40px;
+    padding: 20px 25px 20px 30px;
     box-shadow: 0px 10px 60px 0px rgb(0 0 0 / 10%);
     position: relative;
     border-bottom-left-radius: 4px;
@@ -5289,7 +5299,7 @@ h6 {
 .service-icon2 {
     font-size: 54px;
     line-height: 1.1;
-    color: #004aa1;
+    color: var(--thm-primary);
     display: inline-block;
     margin-bottom: 10px;
     -webkit-transition: all .3s ease-in-out 0s;
@@ -5309,7 +5319,7 @@ h6 {
 }
 
 .service-second h3 a {
-    font-size: 30px;
+    font-size: 20px;
     margin-top: 5px;
     color: var(--thm-black);
 }
@@ -6339,6 +6349,10 @@ h6 {
 
 .about-two__image>img {
     border-radius: 4px;
+    height: 600px;
+    width: 500px;
+    object-fit: cover;
+    object-position: right;
 }
 
 @media (max-width: 1199px) {
@@ -6474,7 +6488,7 @@ h6 {
 
 .about-two .main-header__info-phone {
     align-items: center;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 @media (max-width: 480px) {
@@ -7500,7 +7514,7 @@ h6 {
 
 .credit-card__details {
     padding-top: 100px;
-    padding-bottom: 0;
+    padding-bottom: 40px;
 }
 
 @media (max-width: 991px) {
@@ -7521,14 +7535,16 @@ h6 {
 
 .credit-card__details .about-two__image::before {
     width: 100%;
-    height: calc(100% - 60px);
+    height: calc(100% - 40px);
     background-color: var(--thm-primary);
-    top: 30px;
-    left: -30px;
+    top: 15px;
+    left: -15px;
 }
 
 .credit-card__details .about-two__image>img {
     position: relative;
+    object-fit: cover;
+    object-position: left;
     z-index: 10;
 }
 
