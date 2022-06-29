@@ -1603,12 +1603,12 @@ h6 {
 }
 
 .main-header__info-phone>i {
-    font-size: 32px;
+    font-size: 28px;
     color: var(--thm-primary);
 }
 
 .main-header__info-phone-content {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .main-header__info-phone-content span {
@@ -1623,8 +1623,8 @@ h6 {
 }
 
 .main-header__info-phone-content h3 {
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 15px;
+    font-weight: 800;
     margin: 0;
     line-height: 1;
     color: var(--thm-black);
@@ -1814,29 +1814,26 @@ h6 {
     position: absolute;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 300px) {
     .main-menu .logo-box {
         width: 100%;
         position: absolute;
         justify-content: space-between;
     }
+    .main-menu .main-header__info .main-header__info-phone i {
+        display: none;
+    }
 }
 
 @media (max-width: 1199px) {
     .main-menu .logo-box .mobile-nav__toggler {
-        margin-left: 20px;
+        margin-left: 8px;
     }
 }
 
 @media (max-width: 1199px) {
     .main-menu .main-header__info {
         margin-left: auto;
-    }
-}
-
-@media (max-width: 425px) {
-    .main-menu .main-header__info {
-        display: none;
     }
 }
 
@@ -1937,17 +1934,6 @@ h6 {
     visibility: visible;
     transform: translateX(0);
     transition: transform 0.5s ease 0.5s, opacity 0.5s ease 0.5s, visibility 0.5s ease 0.5s;
-}
-
-.mobile-nav__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--thm-black);
-    opacity: 0.8;
-    cursor: pointer;
 }
 
 .mobile-nav__content {
@@ -3536,7 +3522,7 @@ h6 {
 }
 
 .faq-one__box .main-header__info-phone>i {
-    font-size: 38px;
+    font-size: 25px;
     color: #fff;
 }
 
@@ -6340,7 +6326,7 @@ h6 {
     content: "";
     width: 20px;
     height: 338px;
-    background-color: var(--thm-base);
+    background-color: var(--thm-primary);
     position: absolute;
     top: 0;
     left: -50px;
@@ -6353,6 +6339,20 @@ h6 {
     width: 500px;
     object-fit: cover;
     object-position: right;
+}
+
+@media only screen and (max-width: 600px) {
+    .about-two__image>img {
+        border-radius: 4px;
+        height: 500px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .about-two__image::before {
+        content: "";
+        display: none;
+    }
 }
 
 @media (max-width: 1199px) {
